@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel de Vries - Contact</title>
+  <link rel="stylesheet" href="VbPagina.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Mijn hotel logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="website.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Kamers <span class="arrow">&#9662;</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="kamer1.html">Kamer 1</a></li>
+            <li><a href="kamer2.html">Kamer 2</a></li>
+            <li><a href="Kamer3.html">Kamer 3</a></li>
+          </ul>
+        </li>
+        <li><a href="reserveren.html">Reserveren</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+    <div class="hero-image">
+      <h2>Contacteer ons</h2>
+    </div>
+  <main>
+    <h3>Contact</h3>
+    <p>Heeft u vragen, opmerkingen of wilt u een reservering maken? Neem gerust contact met ons op via onderstaand formulier.</p>
+
+    <form action="contact.php" method="POST">
+      <label for="name">Naam:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Bericht:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <input type="submit" value="Verstuur">
+    </form>
+  </main>
+  
+  <footer>
+    <div class="footer-wrapper">
+      <!-- Footer content here -->
+    </div>
+    <p class="copyright">
+      &copy; 2023 Hotel de Vries. Alle rechten voorbehouden.
+    </p>
+  </footer>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var dropdownToggles = document.getElementsByClassName("dropdown-toggle");
+
+      for (var i = 0; i < dropdownToggles.length; i++) {
+        dropdownToggles[i].addEventListener("click", function() {
+          this.parentNode.classList.toggle("open");
+        });
+      }
+    });
+  </script>
+</body>
+</html>

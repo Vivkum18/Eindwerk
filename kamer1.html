@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamer 1</title>
+  <link rel="stylesheet" href="kamers.css">
+</head>
+<body>
+   <header>
+    <img src="logo.jpg" alt="Mijn hotel logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="website.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Kamers <span class="arrow">&#9662;</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="kamer1.html">Kamer 1</a></li>
+            <li><a href="kamer2.html">Kamer 2</a></li>
+            <li><a href="Kamer3.html">Kamer 3</a></li>
+          </ul>
+        </li>
+        <li><a href="reserveren.html">Reserveren</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="hero-image">
+    <h2>Kamer 1</h2>
+  </div>
+  <main>
+    <div class="room-image">
+      <img src="Website 2.webp" alt="Kamer met tweepersoonsbed">
+    </div>
+    <h2>Kamer met Tweepersoonsbed</h2>
+    <p>Onze gezellige kamer met tweepersoonsbed biedt een comfortabel verblijf voor twee personen. De kamer is smaakvol ingericht en voorzien van moderne voorzieningen om aan al uw behoeften te voldoen.</p>
+    <p>Het tweepersoonsbed is uitgerust met luxe beddengoed en kussens voor een goede nachtrust. Geniet van de rustige en ontspannen sfeer in de kamer, perfect om bij te komen na een dag vol avontuur.</p>
+    <p>De kamer beschikt over een eigen badkamer met een douche, toilet en wastafel. Handdoeken en toiletartikelen worden verstrekt voor uw gemak.</p>
+    <p>Daarnaast is er een comfortabele zithoek waar u kunt ontspannen en tot rust kunt komen. De kamer is ook uitgerust met moderne faciliteiten, zoals een flatscreen-tv, gratis wifi en airconditioning.</p>
+    <p>Voor uw gemak is er ook een bureau waar u kunt werken of uw reisplannen kunt plannen.</p>
+    <p>Prijs per nacht: &euro;150 per nacht</p>
+    <a href="reserveren.html">Reserveer nu</a>
+  </main>
+  
+  
+  <div id="reservation" style="display: none;">
+    <h2>Reserveringspagina</h2>
+    <form>
+      <label for="name">Naam:</label>
+      <input type="text" id="name" name="name" required>
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="check-in">Check-in datum:</label>
+  <input type="date" id="check-in" name="check-in" required>
+
+  <label for="check-out">Check-out datum:</label>
+  <input type="date" id="check-out" name="check-out" required>
+
+  <label for="message">Bericht:</label>
+  <textarea id="message" name="message"></textarea>
+
+  <input type="submit" value="Reserveren">
+</form>
+  </div>
+  <div id="room1">
+    <div class="hero-image">
+      <h2>Kamer 1</h2>
+    </div>
+<main>
+  
+  <div class="room-image">
+    <h3>Luxe tweepersoonskamer</h3>
+    <img src="kamer1.jpg" alt="Kamer 1">
+  </div>
+  
+  <p>Deze luxe tweepersoonskamer beschikt over een comfortabel tweepersoonsbed, een zithoek, een bureau en een eigen badkamer met douche, toilet en haardroger. Daarnaast is er gratis wifi en airconditioning beschikbaar.</p>
+  <p>Prijs per nacht: &euro;100</p>
+  <a href="#">Meer informatie</a>
+</main>
+  </div>
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-box">
+        <img src="Locatie2.jpg" alt="Locatie" id="Socialmedia">
+        <h4>Locatie</h4>
+        <p>Adres</p>
+        <a href="#">Routebeschrijving</a>
+      </div>
+      <div class="footer-box">
+        <img src="Contact2.jpg" alt="Contact" id="Socialmedia">
+        <h4>Contact</h4>
+        <p>Email: info@mijnhotel.com<br>Telefoon: 048 2354 235</p>
+        <a href="#">Stuur ons een bericht</a>
+      </div>
+      <div class="footer-box">
+        <img src="SocialMedia2.jpg" alt="Social media" id="Socialmedia">
+        <h4>Social media</h4>
+        <p>Volg ons op:</p>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+    <footer>
+      &copy; 2023 Hotel de Vries
+    </footer>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var dropdownToggles = document.getElementsByClassName("dropdown-toggle");
+
+      for (var i = 0; i < dropdownToggles.length; i++) {
+        dropdownToggles[i].addEventListener("click", function() {
+          this.parentNode.classList.toggle("open");
+        });
+      }
+    });
+  </script>
+</body>
+</html>

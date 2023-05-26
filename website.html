@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel de Vries</title>
+  <link rel="stylesheet" href="VbPagina.css">
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Mijn hotel logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="website.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Kamers <span class="arrow">&#9662;</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="kamer1.html">Kamer 1</a></li>
+            <li><a href="kamer2.html">Kamer 2</a></li>
+            <li><a href="kamer3.html">Kamer 3</a></li>
+          </ul>
+        </li>
+        <li><a href="reserveren.html">Reserveren</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="hero-image">
+    <h2>Welkom bij onze B&amp;B</h2>
+  </div>
+  
+  <main>
+    <h3>Over ons</h3>
+    <p>Onze gezellige bed &amp; breakfast biedt gasten een unieke en comfortabele ervaring. Of u nu op zoek bent naar een ontspannen uitje of een avontuurlijke vakantie, ons B&amp;B is de perfecte uitvalsbasis.</p>
+    <p>Onze kamers zijn stijlvol en comfortabel ingericht, en bieden alle voorzieningen die u nodig heeft voor een aangenaam verblijf. U kunt genieten van een heerlijk ontbijt met lokale ingrediënten en 's avonds ontspannen in onze lounge of op ons terras.</p>
+    <p>Onze locatie is ideaal voor het verkennen van de omgeving. Of u nu wilt wandelen in de natuur, de lokale cultuur wilt ontdekken of gewoon wilt ontspannen, er is voor elk wat wils.</p>
+    <p>Bij onze B&amp;B staat gastvrijheid hoog in het vaandel. We streven ernaar om onze gasten een onvergetelijke ervaring te bieden en staan altijd klaar om te helpen met eventuele vragen of verzoeken.</p>
+    <p>Dus waar wacht u nog op? Boek uw verblijf bij ons en ontdek de schoonheid van onze B&amp;B en de omgeving!</p>
+    <hr>
+    <br>
+  </main>
+  
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-box">
+        <img src="Website 2.webp" alt="Kamer met 2 bedden">
+        <h4>Kamer met 2 bedden</h4>
+        <p>€150 per nacht</p>
+        <a href="kamer1.html">Meer informatie</a>
+      </div>
+      <div class="footer-box">
+        <img src="Website 3.webp" alt="Kamer met uitzicht op zee">
+        <h4>Kamer met uitzicht op zee</h4>
+        <p>€185 per nacht</p>
+        <a href="kamer2.html">Meer informatie</a>
+      </div>
+      <div class="footer-box">
+        <img src="Website 4.webp" alt="Kamer met zwembad">
+        <h4>Kamer met zwembad</h4>
+        <p>€200 per nacht</p>
+        <a href="kamer3.html">Meer informatie</a>
+      </div>
+    </div>
+    <p# class=".copyright">
+      &copy; 2023 Hotel de Vries. Alle rechten voorbehouden.
+    </p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var dropdownToggles = document.getElementsByClassName("dropdown-toggle");
+
+      for (var i = 0; i < dropdownToggles.length; i++) {
+        dropdownToggles[i].addEventListener("click", function() {
+          this.parentNode.classList.toggle("open");
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+
